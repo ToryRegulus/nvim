@@ -27,7 +27,7 @@ return {
         offsets = {
           {
             filetype = "NvimTree",
-            text = "文件列表",
+            text = "项 目 文 件",
             text_align = "center",
             separator = true
           }
@@ -48,19 +48,25 @@ return {
     priority = 1000,
     opts = {
       indent = { enabled = true },
+      dashboard = {
+        sections = {
+          { section = "header" },
+          { section = "startup" },
+        },
+      },
     },
   },
 
-  {
-    "nvim-tree/nvim-tree.lua",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = {
-      view = { width = 25, },
-    },
-    config = function(_, opts)
-      require("nvim-tree").setup(opts)
+  --{
+    --"nvim-tree/nvim-tree.lua",
+    --dependencies = { "nvim-tree/nvim-web-devicons" },
+    --opts = {
+      --view = { width = 25 },
+    --},
+    --config = function(_, opts)
+      --require("nvim-tree").setup(opts)
 
-      vim.cmd([[NvimTreeOpen]])
-    end,
-  },
+      --vim.cmd([[NvimTreeOpen]])
+    --end,
+  --},
 }
