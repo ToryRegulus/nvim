@@ -14,10 +14,10 @@ opt.number = true
 vim.opt.relativenumber = true
 
 -- TAB字符宽度
-opt.tabstop = 4
+opt.tabstop = 2
 
 -- 每级缩进空格数
-opt.shiftwidth = 4
+opt.shiftwidth = 2
 
 -- 是否用空格代替TAB缩进
 opt.expandtab = true
@@ -56,5 +56,5 @@ opt.termguicolors = true
 -- 是否启用左侧符号栏
 opt.signcolumn = "yes"
 
--- 弹出菜单透明度
-opt.pumblend = 15
+-- 底部弹出菜单栏的透明度
+opt.pumblend = 3
